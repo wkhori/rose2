@@ -35,7 +35,7 @@ export const HomeView: FC = () => {
       window?.Jupiter.init({
         displayMode: "integrated",
         integratedTargetId: "integrated-terminal",
-        endpoint: "https://api.mainnet-beta.solana.com",
+        endpoint: "https://mainnet.helius-rpc.com/?api-key=4e9e35e9-d81b-4ccd-bcc5-e6dfac69c293",
         formProps: {
           fixedOutputMint: true,
           initialOutputMint: "7td14bqshsvrbantnsv1zxw5jmxaaagjazcbphcvt6fw",
