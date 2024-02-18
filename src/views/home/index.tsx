@@ -80,11 +80,10 @@ export const HomeView: FC = () => {
         >
           The greatest project built by the greatest dev, ROSE.
           <motion.p
-            className='text-slate-500 text-xl leading-relaxed'
+            className='text-slate-500 text-xl leading-relaxed mx-5 mt-4 mb-2'
             variants={itemVariants}
           >
-            The largest project launched via <a href="https://www.pump.fun/" className="text-rose-400 hover:text-rose-500 transition duration-300 ease-in-out">pump.fun</a>. Built by Rose, shipped by Rose, and community managed BY ROSE.
-          </motion.p>
+$ROSE, the wildest meme coin born from the Telegram Rose bot, exploded onto the Solana scene as its most epic crowdfunded, community-driven spectacle. Launched through a no-holds-barred fair drop on pump.fun, this project flips the script with zero devs, pure anarchy, and governance by the meme lords themselves. Riding high on Solana's lightning-fast chain, $ROSE embodies the soul of the degen dream: fast, furious, and freakin' equitable. It’s not just a coin; it’s a badge of honor in the wild west of crypto, proving when degens unite, they're unstoppable. Join the $ROSE riot, where every holder is a pioneer in the new frontier of finance—decentralized, democratic, and downright degen.          </motion.p>
         </motion.h4>
         <div id="integrated-terminal" className="min-h-[500px]"></div>
       </motion.div>
