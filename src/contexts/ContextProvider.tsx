@@ -1,14 +1,12 @@
 import { WalletAdapterNetwork, WalletError } from '@solana/wallet-adapter-base';
 import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
-import {
-    UnsafeBurnerWalletAdapter
-} from '@solana/wallet-adapter-wallets';
-import { Cluster, clusterApiUrl } from '@solana/web3.js';
-import { FC, ReactNode, useCallback, useMemo } from 'react';
-import { AutoConnectProvider, useAutoConnect } from './AutoConnectProvider';
-import { notify } from "../utils/notifications";
-import { NetworkConfigurationProvider, useNetworkConfiguration } from './NetworkConfigurationProvider';
+
+import { clusterApiUrl } from '@solana/web3.js';
 import dynamic from "next/dynamic";
+import { FC, ReactNode, useCallback, useMemo } from 'react';
+import { notify } from "../utils/notifications";
+import { AutoConnectProvider, useAutoConnect } from './AutoConnectProvider';
+import { NetworkConfigurationProvider, useNetworkConfiguration } from './NetworkConfigurationProvider';
 
 const ReactUIWalletModalProviderDynamic = dynamic(
   async () =>
@@ -26,7 +24,7 @@ const WalletContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
 
     const wallets = useMemo(
         () => [
-            new UnsafeBurnerWalletAdapter(),
+       
         ],
         [network]
     );
