@@ -19,9 +19,9 @@ export const HomeView: FC = () => {
 
   useEffect(() => {
     let intervalId: NodeJS.Timeout | undefined = undefined;
-    if (!isLoaded || !window.Jupiter) {
+    if (!isLoaded || !window?.Jupiter) {
       intervalId = setInterval(() => {
-        setIsLoaded(!!window.Jupiter);
+        setIsLoaded(!!window?.Jupiter);
       }, 500);
     }
 
@@ -31,8 +31,8 @@ export const HomeView: FC = () => {
   }, [isLoaded]);
 
   useEffect(() => {
-    if (isLoaded && window.Jupiter) {
-      window.Jupiter.init({
+    if (isLoaded && window?.Jupiter) {
+      window?.Jupiter.init({
         displayMode: "integrated",
         integratedTargetId: "integrated-terminal",
         endpoint: "https://api.mainnet-beta.solana.com",
